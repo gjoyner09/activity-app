@@ -5,7 +5,7 @@ import Price from "./Price";
 import Participants from "./Participants";
 import GetActivity from "./GetActivity";
 
-const Inputs = () => {
+const Inputs = (changeActivity: any) => {
 	// Accessibility
 	const [accessibility, setAccessibility] = useState<string>("");
 	function accessibilityChange(event: string): void {
@@ -57,6 +57,7 @@ const Inputs = () => {
 					participants={participants}
 					price={price}
 					accessibility={accessibility}
+					changeActivity={changeActivity}
 				/>
 			</div>
 		</>
